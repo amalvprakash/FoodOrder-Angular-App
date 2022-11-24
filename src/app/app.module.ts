@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 const myRoute:Routes=[
   {
@@ -20,6 +21,10 @@ const myRoute:Routes=[
   {
     path:"signup",
     component:SignupComponent
+  },
+  {
+    path:"feedback",
+    component:SignupComponent
   }
 ]
 @NgModule({
@@ -27,7 +32,8 @@ const myRoute:Routes=[
     AppComponent,
     HomeComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
