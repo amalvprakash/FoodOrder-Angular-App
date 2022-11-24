@@ -26,7 +26,7 @@ const myRoute:Routes=[
   },
   {
     path:"feedback",
-    component:SignupComponent
+    component:FeedbackComponent
   },
   {
     path:"order",
