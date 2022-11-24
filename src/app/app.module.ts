@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { OrderComponent } from './order/order.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -30,6 +31,10 @@ const myRoute:Routes=[
   {
     path:"order",
     component:OrderComponent
+  },
+  {
+    path:"navbar",
+    component:NavbarComponent
   }
 ]
 @NgModule({
@@ -39,7 +44,8 @@ const myRoute:Routes=[
     LoginComponent,
     SignupComponent,
     FeedbackComponent,
-    OrderComponent
+    OrderComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
