@@ -8,34 +8,34 @@
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Address</label>
-                    <input type="text" class="form-control">
+                    <input name="address" [(ngModel)]="address" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Pincode</label>
-                    <input type="text" class="form-control">
+                    <input name="pincode" [(ngModel)]="pincode" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Phone</label>
-                    <input type="text" class="form-control">
+                    <input name="phone" [(ngModel)]="phone" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Email</label>
-                    <input type="text" class="form-control">
+                    <input  name="email" [(ngModel)]="email" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Landmark</label>
-                    <input type="password" class="form-control">
+                    <input  name="landmark" [(ngModel)]="landmark" type="password" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Order Instructions</label>
-                    <input type="text" class="form-control">
+                    <input  name="orderInstruction" [(ngModel)]="orderInstruction" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-warning" routerLink="/login">Place order</button>
+                    <button (click)="order()" class="btn btn-warning" routerLink="/login">Place order</button>
                 </div>
             </div>
     </div>
